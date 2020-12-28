@@ -8,10 +8,18 @@ function CheckPing(player)
 end
 
 Events:Subscribe('Player:Respawn', function(player)
-		CheckPing(player)
+		if (player ~= nil) then
+			CheckPing(player)
+		end
+
 end)
 
 Events:Subscribe('Player:Killed', function(player, inflictor, position, weapon, isRoadKill, isHeadShot, wasVictimInReviveState, info)
+	if (player ~= nil) then
 		CheckPing(player)
+	end
+
+	if (inflictor ~= nil) then
 		CheckPing(inflictor)
+	end
 end)

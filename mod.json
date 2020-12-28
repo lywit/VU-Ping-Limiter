@@ -1,11 +1,12 @@
 {
   "Name": "PingLimiter",
-  "Authors": ["PowerChopper"],
+  "Authors": [ "PowerChopper" ],
   "Description": "Kicks players that have a high ping",
+  "URL": "https://github.com/lywit/VU-Ping-Limiter",
   "Version": "1.0.0",
   "HasVeniceEXT": true,
   "HasWebUI": false,
-  "Tags": ["ping-limiter"],
+  "Tags": [ "ping-limiter" ],
   "Dependencies": {
     "veniceext": "^1.0.0"
   }
