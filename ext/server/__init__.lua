@@ -11,7 +11,6 @@ Events:Subscribe('Player:Respawn', function(player)
 		if (player ~= nil) then
 			CheckPing(player)
 		end
-
 end)
 
 Events:Subscribe('Player:Killed', function(player, inflictor, position, weapon, isRoadKill, isHeadShot, wasVictimInReviveState, info)
